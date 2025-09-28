@@ -34,22 +34,11 @@ ENTITY_IDS = {
 
 LOCAL_TIMEZONE = pytz.timezone('Europe/Rome')
 
-# Configurazione Percorsi e Nomi Colonne (Dati del Professore)
-# <<< IMPORTANTE: Assicurati che questo percorso punti direttamente al file CSV/XLSX,
-# non solo alla cartella. Esempio: "C:/Users/Eka/Desktop/Progetto Python/API/dati_prof/dati_annuali_prof.csv"
 PROF_DATA_PATH = "C:/Users/giuse/Desktop/dataset/dataset_prof/consumi_01-11-2023_31_10_2024.csv"
-#PROF_DATA_PATH = "C:/Users/Eka/Desktop/Progetto Python/API/dati_prof/consumi_01-11-2023_31_10_2024.csv"
-# Se il file del professore ha solo 'entity_id', 'state', 'last_changed' e il tuo "consumi" è in 'state', allora 'last_changed' è il tuo timestamp.
 PROF_TIME_COL = 'last_changed'  # <<< POTREBBE ESSERE NECESSARIO AGGIUSTARE QUESTO NOME se il tuo file del professore ha una colonna data/ora diversa.
-# Puoi aggiungere altre colonne dal file del professore qui.
-# Ad esempio, se il prof ha anche 'occupancy' e 'appliance_status':
-# AGGIORNA QUESTA LISTA CON I NOMI ESATTI DELLE COLONNE CHE VUOI CARICARE DAL FILE DEL PROF
+
 PROF_ADDITIONAL_COLS = [
     'state']  # <<< Ho cambiato 'value' a 'state' basandomi sul tuo log che mostrava 'state' nel file del prof.
-# 'state' sarà rinominato in 'prof_main_value' per distinguerlo da altre colonne del prof.
-
-# Configurazione Percorsi e Nomi Colonne (Dati Climatici Esterni da Kaggle - Aggiornato per il file di Roma)
-# <<< IMPORTANTE: Assicurati che questo percorso punti direttamente al file CSV/XLSX,
 
 EXTERNAL_WEATHER_DATA_PATH = "C:/Users/Eka/Desktop/Progetto Python/API/dati_climatici/Roma_weather.csv"
 
@@ -363,4 +352,5 @@ if __name__ == "__main__":
     # Ora puoi salvare in Excel senza errori
     df_to_save.to_excel("df_api_historical.xlsx", index=True)
     print("Salvato df_api_historical.xlsx senza timezone nell'indice.")
+
 
