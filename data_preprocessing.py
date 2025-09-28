@@ -9,54 +9,8 @@ def clean_dataset(use_isolation_forest=False):
         print("✅ file_ripulito.csv già esistente. Nessuna azione eseguita.")
         return
 
-    # === 1. Carica e pulisci il primo dataset (meteo + consumi) ===
-    # dati_meteo = pd.read_excel(r"C:\Users\giuse\Downloads\dati_meteo_stazione_lecce.xlsx")
-    # dati_meteo.columns = dati_meteo.columns.str.strip().str.lower()
-    # dati_meteo = dati_meteo.rename(columns={'data': 'datetime', 'temperatura': 'Temperature', 'umr': 'Humidity'})
-    #
-    # print("Colonne trovate (meteo):", dati_meteo.columns.tolist())
-    #
-    # consumi = pd.read_csv(
-    #     r"C:\Users\giuse\Desktop\dataset\dataset_prof\consumi_01-11-2023_31_10_2024.csv",
-    #     parse_dates=['last_changed']
-    # )
-    # consumi['last_changed'] = consumi['last_changed'].dt.tz_localize(None)
-    # consumi = consumi.rename(columns={'last_changed': 'datetime', 'state': 'EnergyConsumption'})
-    # consumi['EnergyConsumption'] = pd.to_numeric(consumi['EnergyConsumption'], errors='coerce')
-    #
-    # df1 = pd.merge(dati_meteo, consumi[['datetime', 'EnergyConsumption']], on='datetime', how='inner')
-    # df1 = df1.dropna()
-    # df1 = df1[(df1['Temperature'].between(-30, 50)) &
-    #           (df1['Humidity'].between(0, 100)) &
-    #           (df1['EnergyConsumption'] >= 0)]
-    # df1.set_index('datetime', inplace=True)
-    # df1 = df1.resample('h').mean()
-    # df1.interpolate(method='time', inplace=True)
-    # df1.ffill(inplace=True)
-    # df1.bfill(inplace=True)
-    # df1.dropna(inplace=True)
-    #
-    # # === 2. Carica e pulisci il secondo dataset consumi.csv ===
-    # consumi_extra_path = r"C:\Users\giuse\Desktop\dataset\dataset_esterni\Energy_consumption.csv"
-    # df2 = pd.read_csv(consumi_extra_path, parse_dates=['Timestamp'])
-    #
-    # # Pulizia e filtri base (Temperature, Humidity, EnergyConsumption)
-    # df2 = df2.rename(columns={'Timestamp': 'datetime'})
-    # df2 = df2[['datetime', 'Temperature', 'Humidity', 'EnergyConsumption']]  # prendo solo le colonne essenziali
-    #
-    # df2 = df2.dropna()
-    # df2 = df2[(df2['Temperature'].between(-30, 50)) &
-    #           (df2['Humidity'].between(0, 100)) &
-    #           (df2['EnergyConsumption'] >= 0)]
-    #
-    # df2.set_index('datetime', inplace=True)
-    # df2 = df2.resample('h').mean()
-    # df2.interpolate(method='time', inplace=True)
-    # df2.ffill(inplace=True)
-    # df2.bfill(inplace=True)
-    # df2.dropna(inplace=True)
 
-        # === 3. Carica e pulisci il terzo dataset ===
+        # ===  Carica e pulisci il terzo dataset ===
     third_dataset_path = r"C:\Users\giuse\Desktop\dataset\dataset_esterni\energy_weather_raw_data.csv"
     df3 = pd.read_csv(third_dataset_path, parse_dates=['date'])
 
@@ -372,6 +326,7 @@ def clean_dataset(use_isolation_forest=False):
 
 if __name__ == "__main__":
     clean_dataset(use_isolation_forest=True)  # True o False come preferisci
+
 
 
 
