@@ -77,3 +77,22 @@ Dashboard Previsioni: Visualizzazione di metriche di valutazione del modello (MA
 Tecnologie Utilizzate
 
 <img width="888" height="385" alt="Image" src="https://github.com/user-attachments/assets/954e7f44-052c-4ed4-bc7e-f3b4f946caa7" />
+
+
+### ⚙️ Istruzioni per l'Avvio dell'Interfaccia Utente
+
+Per avviare l'applicazione Streamlit in locale (il frontend del progetto):
+
+1.  **Clona il repository:**
+    ```bash
+    git clone [https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml](https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml)
+    ```
+2.  **Installa le dipendenze:** 
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Avvia l'App:**
+    ```bash
+    streamlit run main.py
+    ```
+L'applicazione sarà accessibile nel browser all'indirizzo `http://localhost:8501`.
