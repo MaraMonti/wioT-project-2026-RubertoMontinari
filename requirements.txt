@@ -7,3 +7,4 @@ requests
 matplotlib
 seaborn
 shap
+xgboost
