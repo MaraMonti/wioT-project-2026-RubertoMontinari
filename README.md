@@ -44,12 +44,11 @@ Streamlit Application (Frontend): Interfaccia utente che carica il modello ML, v
 Il progetto è suddiviso in diversi repository, ciascuno per un componente specifico. Di seguito l'elenco dei repository con i rispettivi link:
 | Componente | Ruolo | Repository Link |
 | :--- | :--- | :--- |
-| **Edge Device** | Rilevazione locale (simulata o reale) dei dati. | **[LINK REPO EDGE DEVICE PLACEHOLDER]** |
-| **Gateway / ML Service** | Contiene il Modello ML e l'App Streamlit (questo repository). | **[LINK A QUESTO REPO]** |
+| **Edge Device** | Rilevazione locale (simulata o reale) dei dati. | **https://github.com/MaraMonti/wot-project-2025-rubertomontinari-edge-device** |
+| **Gateway / ML Service** | Contiene il Modello ML e l'App Streamlit (questo repository). | **https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml** |
 | **Front-end / App** | (Se separato) Interfaccia utente finale. | **[LINK REPO FRONT-END PLACEHOLDER]** |
-| **Presentation (GitHub Page)** | Sito vetrina del progetto. | **[LINK REPO PRESENTATION PLACEHOLDER]** |
 
-*(**NOTA:** I link sopra sono placeholder. Sostituirli con gli URL dei repository effettivi.)*
+
 
 ---
 
