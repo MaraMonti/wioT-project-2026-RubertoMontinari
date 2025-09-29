@@ -8,5 +8,4 @@ matplotlib
 seaborn
 shap
 xgboost
-g++
 build-essential
