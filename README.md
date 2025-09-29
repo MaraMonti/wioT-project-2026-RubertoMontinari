@@ -85,7 +85,7 @@ Per avviare l'applicazione Streamlit in locale (il frontend del progetto):
 
 1.  **Clona il repository:**
     ```bash
-    git clone [https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml](https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml)
+    git clone [https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml]
     ```
 2.  **Installa le dipendenze:** 
     ```bash
