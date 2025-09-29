@@ -9,3 +9,4 @@ seaborn
 shap
 xgboost
 build-essential
+os
