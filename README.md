@@ -1,4 +1,5 @@
 #wot-project-2026-rubertomontinari-gateway-ml
+
 **⚡ **Previsione della domanda energetica della casa intelligente****
 
 
