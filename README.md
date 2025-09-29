@@ -45,7 +45,7 @@ Il progetto è suddiviso in diversi repository, ciascuno per un componente speci
 | Componente | Ruolo | Repository Link |
 | :--- | :--- | :--- |
 | **Edge Device** | Rilevazione locale (simulata o reale) dei dati. | **https://github.com/MaraMonti/wot-project-2025-rubertomontinari-edge-device** |
-| **Gateway / ML Service** | Contiene il Modello ML e l'App Streamlit (questo repository). | **https://github.com/MaraMonti/wot-project-2025-rubertomontinari-gateway-ml** |
+| **Gateway / ML Service** | Contiene il Modello ML e l'App Streamlit (questo repository). | **https://https://github.com/MaraMonti/wioT-project-2025-RubertoMontinari-gateway-ml** |
 | **Front-end / App** | (Se separato) Interfaccia utente finale. | **[LINK REPO FRONT-END PLACEHOLDER]** |
 
 
